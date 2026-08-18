@@ -17,6 +17,7 @@ app.get('/api/health', (req, res) => {
 
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/subjects', require('./routes/subjects'));
+app.use('/api/attendance', require('./routes/attendance'));
 
 app.listen(PORT, () => {
     console.log(
